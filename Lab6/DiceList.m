@@ -20,6 +20,9 @@
         [[self diceList] addObject:[Dice new]];
         [[self diceList] addObject:[Dice new]];
         [[self diceList] addObject:[Dice new]];
+        for (int i = 0; i < [self diceList].count; i++) {
+            [[self diceList][i] randomise];
+        }
     }
     return self;
 }

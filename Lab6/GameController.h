@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init;
 - (void)holdDie:(Dice*)dice;
 - (void)resetDice:(NSMutableArray*)array;
-- (void)printBoard:(NSMutableArray*)array;
+- (void)printBoard:(NSMutableArray*)array isLast:(BOOL)isLast;
 - (void)calculateScore:(NSMutableArray*)array;
 - (void)decrementRolls;
 - (NSString*)getIcon:(Dice*)dice;

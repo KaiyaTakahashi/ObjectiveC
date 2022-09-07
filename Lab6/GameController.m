@@ -29,11 +29,14 @@
     }
 }
 
-- (void)printBoard:(NSMutableArray*)array{
+- (void)printBoard:(NSMutableArray*)array isLast:(BOOL)isLast {
     [self setScore:0];
     [self calculateScore:array];
-    
-    NSLog(@"Remaining Rolls: %d", [self remainingRolls]);
+    if (isLast) {
+        NSLog(@"GAME OVER");
+    } else {
+        NSLog(@"Remaining Rolls: %d", [self remainingRolls]);
+    }
     NSLog(@"------------------------");
     NSLog(@"--    Current Dice    --");
     NSLog(@" %@  %@  %@  %@  %@  ",
