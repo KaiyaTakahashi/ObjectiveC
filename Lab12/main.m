@@ -1,8 +1,8 @@
 //
 //  main.m
-//  ObjectiveC
+//  Lab12
 //
-//  Created by Kaiya Takahashi on 2022-08-30.
+//  Created by Kaiya Takahashi on 2022-09-13.
 //
 
 #import <Foundation/Foundation.h>
